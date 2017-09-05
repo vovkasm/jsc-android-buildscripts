@@ -11,3 +11,6 @@ svn export https://svn.webkit.org/repository/webkit/$SVN_DIR/CMakeLists.txt $TAR
 mkdir -p $TARGET_DIR/icu
 # This is for the latest release for the latest android from https://android.googlesource.com/platform/external/icu/
 curl https://android.googlesource.com/platform/external/icu/+archive/android-7.1.2_r11/icu4c.tar.gz | tar xzf - -C $TARGET_DIR/icu
+
+mkdir -p $TARGET_DIR/plist
+curl http://www.libimobiledevice.org/downloads/libplist-2.0.0.tar.bz2 | tar xjf - -C $TARGET_DIR/plist --strip 1
