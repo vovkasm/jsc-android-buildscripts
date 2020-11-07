@@ -27,7 +27,7 @@
   },
   "config": {
     "webkitGTK": "2.26.1",
-    "chromiumICUCommit": "64e5d7d43a1ff205e3787ab6150bbc1a1837332b"
+    "chromiumICUCommit": "c2a4cae149aae7fd30c4cbe3cf1b30df03b386f1"
   },
   "devDependencies": {
     "commander": "^4.0.1",
