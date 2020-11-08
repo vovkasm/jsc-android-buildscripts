@@ -56,11 +56,11 @@ JSC_PATCHSET=(
   "jsc_heap_gc_like_ios.patch"
 )
 
-if [[ "$I18N" = false ]]
-then
-  # JSC_PATCHSET+=(
-  # )
-fi
+# if [[ "$I18N" = false ]]
+# then
+#   JSC_PATCHSET+=(
+#   )
+# fi
 
 ######################################################################################
 # Patchset management end
