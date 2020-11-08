@@ -82,6 +82,7 @@ $TARGETDIR/webkit/Tools/Scripts/build-webkit \
   -DENABLE_FTL_JIT=OFF \
   -DUSE_SYSTEM_MALLOC=OFF \
   -DJSC_VERSION=\"${JSC_VERSION}\" \
+  -DJavaScriptCore_OUTPUT_NAME=jsc \
   $JSC_FEATURE_FLAGS \
   $BUILD_TYPE_FLAGS \
   "
