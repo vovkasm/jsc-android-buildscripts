@@ -58,10 +58,8 @@ JSC_PATCHSET=(
 
 if [[ "$I18N" = false ]]
 then
-  JSC_PATCHSET+=(
-    # Disable i18n for non-i18n build
-    "jsc_disable_icu.patch"
-  )
+  # JSC_PATCHSET+=(
+  # )
 fi
 
 ######################################################################################
