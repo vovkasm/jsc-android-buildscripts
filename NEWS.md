@@ -1,5 +1,24 @@
 ## JSC News
 
+### ? WebKitGtk 2.32+ (r273546)
+
+?
+
+### Technology Preview 119 [271794-272845](https://trac.webkit.org/log?stop_rev=271794&rev=272845&limit=999)
+
+- Added @ in Error#stack even if function name does not exist (r272139)
+- Added Atomics support for BigInt64Array and BigUint64Array behind a runtime flag (JSC_useSharedArrayBuffer=1) (r272341)
+- Adjusted properties order of host JS functions (r272099)
+- Changed Object.assign to throw for property creation on non-extensible target (r272411)
+- Handled milliseconds in Date’s timezone without floating point rounding (r272127)
+- Implemented BigInt64Array and BigUint64Array (r272170, r272215)
+- Implemented private methods behind flag (JSC_usePrivateMethods=1)(r272580)
+- Made JSON.parse faster by using table for fast string parsing (r272570)
+
+### Technology Preview 120 [271358-271794](https://trac.webkit.org/log?stop_rev=271358&rev=271794&limit=999)
+
+- Fixed super accesses on arrow functions defined as a class field (r271420)
+
 ### Technology Preview 119 [270749-371358](https://trac.webkit.org/log?stop_rev=270749&rev=271358&limit=999)
 
 - Fixed non-enumerable property to shadow inherited enumerable property from for-in (r270874)
