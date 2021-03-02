@@ -1,12 +1,49 @@
 ## JSC News
 
-### Technology Preview 115 [267325-267719](https://trac.webkit.org/log?stop_rev=267325&rev=267719&limit=999)
+### Technology Preview 119 [270749-371358](https://trac.webkit.org/log?stop_rev=270749&rev=271358&limit=999)
+
+- Fixed non-enumerable property to shadow inherited enumerable property from for-in (r270874)
+- Fixed Intl.DateTimeFormat#formatRange to generate the same output to Intl.DateTimeFormat#format if startDate and endDate are “practically-equal” (r271224)
+- Implemented arbitrary-module-namespace-identifier-names (r270923)
+- Improved performance of Object rest and spread (r271343)
+
+### Technology Preview 118 [270230-270749](https://trac.webkit.org/log?stop_rev=270230&rev=270749&limit=999)
+
+- Enabled “at” methods (r270550)
+- Changed get and set for object literal and class to not be escaped (r270487)
+- Accepted escaped keywords for class and object property names (r270481)
+- Aligned %TypedArray% constructor/slice behavior with the specification strictly (r270552, r270371)
+- Added a JSC API to allow acquiring the JSLock to accelerate performance (r270659)
+- Removed unnecessary JSLock use from various JSC APIs (r270665)
+- Aligned [[DefineOwnProperty]] method of mapped arguments object with the specification strictly (r270664)
+- Changed Reflect.preventExtensions not throwing if called on WindowProxy or Location (r270702)
+
+### Technology Preview 117 [268651-270230](https://trac.webkit.org/log?stop_rev=268651&rev=270230&limit=1579)
+
+- Enabled static public class fields (r269922, r269939)
+- Enabled static and instance private class fields (r270066)
+- Implemented Intl.DateTimeFormat.formatRangeToParts (r269706)
+- Implemented Intl.ListFormat (r268956)
+- Aligned %TypedArray% behavior with recent spec adjustments (r269670)
+- Implemented @@species support in ArrayBuffer#slice (r269574)
+- Fixed toLocaleDateString() resolving incorrect date for some old dates (r269502)
+- Resurrected SharedArrayBuffer and Atomics behind a flag (JSC_useSharedArrayBuffer=1) (r269531)
+
+### Technology Preview 116 [267959-268651](https://trac.webkit.org/log?stop_rev=267959&rev=268651&limit=999)
+
+- Changed arguments.callee to become ThrowTypeError if the function has a complex-parameter-list (spec-term) (r268323)
+- Changed BigInt constructor to be constructible while it always throws an error (r268322)
+- Fixed Array.prototype.sort‘s sortBucketSort which accessed an array in an invalid way leading to incorrect results with indexed properties on the prototype chain (r268375)
+- Improved the essential internal methods for %TypedArray% to adhere to spec (r268640)
+
+### Technology Preview 115 [267325-267959](https://trac.webkit.org/log?stop_rev=267325&rev=267959&limit=999)
 
 - Fixed BigInt to work with Map and Set (r267373)
 - Enabled Intl.DateTimeFormat dayPeriod (r267454)
 - Updated Intl rounding behavior to align with specifications update (r267500)
 - Updated functions to consistently enumerate length property before name property (r267364)
 - Updated Array.prototype.sort to be consistent with specifications (r267514)
+- Implemented item method proposal, note that this will be renamed to at later (r267814)
 
 ### Technology Preview 114 [265893-267325](https://trac.webkit.org/log?stop_rev=265893&rev=267325&limit=1432)
 
