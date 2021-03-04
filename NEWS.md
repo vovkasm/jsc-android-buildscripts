@@ -4,7 +4,7 @@
 
 ?
 
-### Technology Preview 119 [271794-272845](https://trac.webkit.org/log?stop_rev=271794&rev=272845&limit=999)
+### Technology Preview 121 [271794-272845](https://trac.webkit.org/log?stop_rev=271794&rev=272845&limit=999)
 
 - Added @ in Error#stack even if function name does not exist (r272139)
 - Added Atomics support for BigInt64Array and BigUint64Array behind a runtime flag (JSC_useSharedArrayBuffer=1) (r272341)
@@ -255,4 +255,3 @@ Removed wasmAwareLexicalGlobalObject (r251529)
 
 ### Technology Preview 83 (245007-245618) (RN official 245459.0.0)
 
-- 
