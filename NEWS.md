@@ -1,8 +1,35 @@
 ## JSC News
 
-### ? WebKitGtk 2.32+ (r273546)
+### Technology Preview 124 [274641-275811](https://trac.webkit.org/log?stop_rev=274641&rev=275811&limit=999)
 
-?
+- Fixed Intl.Locale to not assume is8Bit (r274784)
+- Fixed Object.freeze(this) at the global scope to not lose a reference to a WatchpointSet (r274882)
+- Fixed RegExp interpreter not to match against non-BMP characters with multiple dots (r274806, r274945)
+- Fixed incorrect Array toString() if join() is not callable (r275544)
+
+### Technology Preview 123 [273903-274641](https://trac.webkit.org/log?stop_rev=273903&rev=274641&limit=999)
+
+- Implemented Error#cause (r274552)
+- Optimized Boolean constructor calls in DFG and FTL (r274037)
+- Fixed attribute-changing of global variables (r274308)
+
+### Technology Preview 122 [272845-273903](https://trac.webkit.org/log?stop_rev=272845&rev=273903&limit=999) WebKitGtk 2.32+ (r273546)
+
+- Enabled private methods (r273125)
+- Implemented private static methods (r273107)
+- Implemented top-level-await (r273225)
+- Implemented RegExp Match Indices (r273086)
+- Implemented GC verifier (r273138)
+- Added support for modules in Workers and Worklets (r273203)
+- Added support for modules in Service Workers (r273224)
+- Avoided performing toObject for options in new Intl constructors to align them to a new spec change (r273153)
+- Reduced promise reaction memory usage when there are multiple reactions (r273718)
+- Optimized object-reset expression (r273135)
+- Optimized Promise#then by avoiding function allocations in major case (r273605)
+- Micro-optimized for-in (r273766)
+- Threw TypeError when getFunctionRealm hits revoked Proxy (r273661)
+- Threw TypeError when TypedArray’s [[DefineOwnProperty]] failed (r273750)
+- Fixed delete with index for module namespace object when arbitrary module identifiers use index (r273816)
 
 ### Technology Preview 121 [271794-272845](https://trac.webkit.org/log?stop_rev=271794&rev=272845&limit=999)
 
